@@ -4,25 +4,30 @@
             /* FONT FAMILY */
   font-family: 'Rubik', sans-serif;
 
-            /* COLORS  */
+      /* --------------------- COLORS  ----------------------*/
+
   --dark-blue: #0D0D2B;
   --light-blue: #3671E9;
   --white-accent: #FFFFFF;
   --black: #000000;
 
-              /* FONT Weight */
+      /*------------------ FONT Weight -------------------*/
+
   --header-weight: 600;
   --body-weight: 1rem;
   --btn-font-weight: 300;
 
-            /* FONT Size */
+      /*------------------ FONT Size ------------------*/
   
 
-            /* BASIC RESET */
+      /*------------------ BASIC RESET ------------------*/
+
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+
 }
+
 body{
   background-color: var(--dark-blue);
 }
@@ -34,7 +39,8 @@ header{
   height: 100vh;
   width: 100%;
 }
-  /* -------------------- NAV  SECTION ---------------------- */
+/* -------------------- NAV  SECTION ---------------------- */
+
 nav{
   display: flex;
   justify-content: space-around;
@@ -52,6 +58,7 @@ nav > ul > li {
   padding: 0 2rem;
   font-size: 1rem;
   transition: transform .3s;
+  font-weight: 100;
 }
 nav li:hover{ 
   color: var(--light-blue);
@@ -228,5 +235,5 @@ font-size: 2.5rem;
 }
 
 input[type=text]{
-  
+
 }
