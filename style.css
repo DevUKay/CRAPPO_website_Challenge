@@ -157,6 +157,7 @@ a {
 /* ------------------------------ STATS --------------------------- */
 
 .stats{
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -236,6 +237,7 @@ font-size: clamp(.8rem, 4vw, 2.5rem);
   align-items: center;
   margin-top: 2rem;
   font-weight: 300;
+  z-index: 1;
 }
 
 .check-how-much h3{
@@ -243,7 +245,7 @@ font-size: clamp(.8rem, 4vw, 2.5rem);
 }
 
 .check-how-much p{
-  width: 38%;
+  /* width: 38%; */
   text-align: center;
   line-height: 25px;
 }
@@ -251,10 +253,73 @@ font-size: clamp(.8rem, 4vw, 2.5rem);
 .input-field{
   background-color: var(--white-accent);
   padding: 3rem  6rem;
-  border-radius: 15px 15px 0 0;
-
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 5px 5px solid var(--dark-blue);
 }
 
-.input[text]{
+input[type=text]:nth-child(1){
+  padding: 0 4rem;
+  border:0;
+  border-bottom: 2px solid #eee;
+  text-align: left;
+}
+
+select[name=dropdown]:nth-child(2){
+  padding: 0 4rem;
+  background-color: var(--white-accent);
+  margin: 0 1rem;
+  border:0;
+  border-bottom: 2px solid #eee;
+}
+
+input[type=submit]{
+    background-color: var(--light-blue);
+    padding: 15px 40px;
+    border-radius: 40px;
+    color: var(--white-accent);
+    border: 0;
+    margin: 0 1rem;
+    font-weight: 700;
+    transition: transform .4s; 
+  }
   
+  .btn:hover{
+    transform: scale(1.2);
+  }
+
+.estimate{
+  color: var(--black);
+  padding: 0;
+  text-align: left;
+
+}
+.estimate h3{
+  margin: 0;
+  text-align: left;
+  font-size: 2.5rem; 
+}
+.estimate h5{
+  margin: 4rem 0 1rem 0;
+  text-align: left;
+  color: var(--light-blue);
+}
+
+.estimate span{
+  color: var(--light-blue);
+}
+
+.estimate p{
+  font-size: .8rem;
+  text-align: left;
+  opacity: .4;
+}
+
+/* ----------------------------------- TRADE SECURELY SECTION  -------------------------------- */
+
+
+.trade-securely{
+  background-color: var(--white-accent);
+  margin-top: -3rem;
+  z-index: -1;
 }
