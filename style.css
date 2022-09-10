@@ -395,16 +395,64 @@ color: var(--white-accent);
 display: flex;
 flex-direction: column;
 margin: auto;
-padding: 3rem;
+padding: 3rem ;
 background-color: #2B076E;
 }
 
 .sect-1 h2{
   font-size: 2rem;
-  align-items: center;
   display: inherit;
   margin: auto;
+  align-items: center;
   text-align: center;
   line-height: 3rem;
+  padding-bottom: 4rem;
+  flex-wrap: wrap;
   
+}
+
+/* ------------------------- invest Smart -------------------------*/
+
+.sect-1 .line-1{
+  display: inherit;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.item-1-left h3{
+  font-size: 2rem;
+}
+
+.item-1-left{
+  margin:auto;
+  width: 40%;
+  font-weight: 100;
+  padding: 2rem 0;
+  padding-right: 5rem;
+  align-items: center;
+}
+
+/*------------------------ detailed statistics ---------------------*/
+
+.sect-1 .line-2{
+  display: flex;
+  padding: 2rem;
+
+}
+.line-2 .line-2-right{
+  display: inline-block;
+  line-height: 2rem;
+  padding: 0 4rem;
+  font-weight: 100;
+  width: 30%;
+}
+
+.sect-1 .line-2 img{
+  height: clamp(25rem, 40vh, 40rem);
+  padding: 0 4rem;
+}
+
+.sect-1 .line-2-right h3{
+  font-size: 2rem;
 }
