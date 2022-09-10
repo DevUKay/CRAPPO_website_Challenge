@@ -17,15 +17,10 @@
   --body-weight: 1rem;
   --btn-font-weight: 300;
 
-      /*------------------ FONT Size ------------------*/
-  
-
       /*------------------ BASIC RESET ------------------*/
-
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-
 }
 
 body{
@@ -238,6 +233,7 @@ font-size: clamp(.8rem, 4vw, 2.5rem);
   margin-top: 2rem;
   font-weight: 300;
   z-index: 1;
+  box-shadow: 5px solid black;
 }
 
 .check-how-much h3{
@@ -255,7 +251,7 @@ font-size: clamp(.8rem, 4vw, 2.5rem);
   padding: 3rem  6rem;
   border-radius: 20px;
   text-align: left;
-  box-shadow: 5px 5px solid var(--dark-blue);
+  box-shadow: 5px 10px 35px rgba(14, 11, 54, 0.2);
 }
 
 input[type=text]:nth-child(1){
@@ -317,9 +313,98 @@ input[type=submit]{
 
 /* ----------------------------------- TRADE SECURELY SECTION  -------------------------------- */
 
-
 .trade-securely{
   background-color: var(--white-accent);
-  margin-top: -3rem;
+  margin-top: -12rem;
   z-index: -1;
+  padding-top: 15rem;
+}
+
+.trade-securely .head-txt{
+  text-align: center;
+  font-size: clamp(2rem,5vh, 4rem);
+  line-height: 4rem;
+}
+
+.trade-securely .cards{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+  padding-top: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.trade-securely 
+.cards 
+.section-1,
+.section-2,
+.section-3{
+  width: 15%;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-right: 2rem;
+  padding: 2rem 2rem;
+  line-height: 1.5rem;
+
+}
+.cards
+.section-1 h3,
+.section-2 h3, 
+.section-3 h3{
+  font-size: 1.8rem;
+}
+
+.cards .section-1:hover{
+  background-color: #2b076e;
+  color: var(--white-accent);
+}
+.cards .section-2:hover{
+  background-color: #2b076e;
+  color: var(--white-accent);
+}
+.cards .section-3:hover{
+  background-color: #2b076e;
+  color: var(--white-accent);
+}
+
+.cards span{
+  color:rgb(189, 189, 189);
+  font-size: .8rem;
+}
+
+.btn-BTC, .btn-ETH, .btn-LTC {
+  background-color: var(--light-blue);
+  padding: 15px 40px;
+  border-radius: 40px;
+  color: var(--white-accent);
+  border: 0;
+  font-weight: 700;
+  font-size: .9rem;
+  transition: transform .4s; 
+}
+
+/*------------------------ MARKET SENTIMENTS, PORTFOLIO SECTION -------------------------*/
+
+.sect-1{
+color: var(--white-accent);
+display: flex;
+flex-direction: column;
+margin: auto;
+padding: 3rem;
+background-color: #2B076E;
+}
+
+.sect-1 h2{
+  font-size: 2rem;
+  align-items: center;
+  display: inherit;
+  margin: auto;
+  text-align: center;
+  line-height: 3rem;
+  
 }
