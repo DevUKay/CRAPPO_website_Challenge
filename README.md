@@ -16,7 +16,7 @@
 
 - Cloud flare pages URL: [https://crappo.pages.dev]
 
-- Github pages URL: [...]
+- Github pages URL: [https://devukay.github.io/CRAPPO_website_Challenge/]
 
 ### Built with
 
