@@ -14,10 +14,9 @@
   --body-weight: 1rem;
   --btn-font-weight: 300;
 
-      /*------------------ BASIC RESET ------------------*/
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -43,6 +42,11 @@ nav{
 nav img{
   cursor: pointer;
 }
+
+nav i{
+  visibility: hidden;
+}
+
 
 nav > ul > li {
   display: inline-block;
@@ -114,7 +118,7 @@ a {
 
 .hero-details h1{
   color: var(--white-accent);
-  font-size: clamp(32px, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
 .hero-details p{
@@ -143,7 +147,7 @@ a {
 .hero-img-right{
   margin: -6rem;
   margin-right: 1rem;
-  height: clamp(25rem, 50vw, 35rem);
+  height: clamp(20rem, 50vw, 35rem);
 }
 
 /* ------------------------------ STATS --------------------------- */
@@ -193,7 +197,7 @@ a {
   height: clamp(20rem, 30vw, 30rem);
 }
 .right {
-width: 35%
+width: 40%
 }
 
 .right h3{
@@ -231,6 +235,7 @@ font-size: clamp(.8rem, 4vw, 2.5rem);
   font-weight: 300;
   z-index: 1;
   box-shadow: 5px solid var(--dark-blue);
+  width: 100%;
 }
 
 .check-how-much h3{
@@ -240,6 +245,7 @@ font-size: clamp(.8rem, 4vw, 2.5rem);
 .check-how-much p{
   text-align: center;
   line-height: 25px;
+  width:90%
 }
 
 .input-field{
@@ -315,14 +321,13 @@ select[name=dropdown]:nth-child(2){
 .trade-securely{
   background-color: var(--white-accent);
   margin-top: -12rem;
-  z-index: -1;
   padding-top: 15rem;
 }
 
 .trade-securely .head-txt{
   text-align: center;
   font-size: clamp(32px, 5vw, 4rem);
-  line-height: 4rem;
+  line-height: 3rem;
 }
 
 .trade-securely .cards{
@@ -332,7 +337,7 @@ select[name=dropdown]:nth-child(2){
   flex-direction: row;
   padding-top: 2rem;
   width: 100%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .trade-securely 
@@ -357,13 +362,6 @@ select[name=dropdown]:nth-child(2){
 .section-3 h3{
   font-size: 1.8rem;
 }
-
-/* .cards
-.section-1 p,
-.section-2 p, 
-.section-3 p{
-  font-size: clamp(10px, 1.8vh, 2rem);
-} */
 
 .cards .section-1:hover{
   background-color: #2b076e;
@@ -438,6 +436,10 @@ background-color: #2B076E;
   align-items: center;
 }
 
+.line-1 img{
+  height: clamp(25rem, 20vh, 25rem);
+}
+
 /*------------------------ detailed statistics ---------------------*/
 
 .sect-1 .line-2{
@@ -447,7 +449,7 @@ background-color: #2B076E;
 
 .line-2 .line-2-right{
   line-height: 2rem;
-  padding: 0 4rem;
+  padding: 0 1rem;
   font-weight: 100;
   width: 25%;
 }
@@ -476,8 +478,12 @@ background-color: #2B076E;
   font-size: 2rem;
 }
 .sect-1 .line-3-item p{
-  width: 80%;
+  /* width: 80%; */
   line-height: 1.5rem;
+}
+
+.line-3 img{
+  height: clamp(20rem, 10vh, 25rem);
 }
 
 
@@ -586,5 +592,113 @@ footer .stack3 h2{
   cursor: pointer;
 }
 
+/*-------------------------------- MEDIA ---------------------------------*/
 
-/* media screen (maz) */
+@media screen and (max-width: 950px) {
+
+/* -------------------- HERO  SECTION ----------------------*/
+nav ul{
+  display: none;
+}
+
+nav i{
+  visibility: visible;
+  font-size: 1.5rem;
+}
+nav{
+  padding-top: 1rem;
+
+}
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    margin-top: 0rem;
+    width: 100%;
+  }
+
+  .price-off{
+    width: 85%;
+    margin: auto;
+  }
+/* ------------------------------ STATS --------------------------- */
+  .stats{
+    display: flex;
+    flex-direction: column;
+    padding-top:2rem;
+    text-align: left;
+    
+  }
+
+  .first, .second, .third{
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    padding: 2rem 0;
+    margin: auto;
+  }
+/* ----------------------------------- WHY YOU SECTION ------------------------ */
+  .why-you{
+    display: flex;
+    flex-direction: column-reverse;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    line-height: 2rem;
+    
+  }
+  
+  .right h3{
+    font-size: 2rem;
+    width: 100%;
+    }
+
+    .right {
+      width: 80%
+      }
+/* ---------------------------- CHECK HOW MUCH ------------------------- */
+
+    .check-how-much{
+        text-align: center;
+        width:95%;
+        margin:0;
+    }
+    .input-field{
+        margin: auto;
+        text-align: center;
+    }
+    input[type=text]:nth-child(1){
+        padding: 1rem 1rem;
+        color: var(--dark-blue);
+        border-bottom: 2px solid #eee;
+        text-align: center;
+    }
+
+    select[name=dropdown]:nth-child(2){  padding: 1rem 0; }
+
+    .estimate h3{ text-align: center; font-size:1.7rem; }
+
+    .estimate h5{text-align: center;font-size:1rem; }
+
+    .estimate p{ text-align: center; font-size: .9rem;}
+
+/* ----------------------- TRADE SECURELY SECTION  ------------------------- */
+
+.trade-securely .head-txt{
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.trade-securely .cards{
+  /* flex-direction: column; */
+  margin: auto;
+  text-align: center;
+}
+
+
+}
