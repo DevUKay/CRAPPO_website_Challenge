@@ -22,6 +22,7 @@ box-sizing: border-box;
 
 body{
   background-color: var(--dark-blue);
+  width: 100%;
 }
 
 header{
@@ -452,7 +453,7 @@ background-color: #2B076E;
 }
 
 .sect-1 .line-2 img{
-  height: clamp(25rem, 40vh, 40rem);
+  height: clamp(20rem, 20vh, 25rem);
   padding: 0 4rem;
 }
 
@@ -545,6 +546,7 @@ form input[type=submit]:hover{
 
 /*------------------------ FOOTER ------------------------- */
 footer{
+  cursor: pointer;
   background-color: var(--dark-blue);
   color: var(--white-accent);
   font-weight: 100;
@@ -558,6 +560,7 @@ footer{
 }
 footer ul li{
   list-style: none;
+  cursor: pointer;
 }
 
 footer .stack3 h2{
@@ -580,6 +583,7 @@ footer .stack3 h2{
   list-style: none;
   padding: 0 1.3rem;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 
