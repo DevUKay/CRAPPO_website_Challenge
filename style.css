@@ -339,7 +339,6 @@ select[name=dropdown]:nth-child(2){
   flex-direction: row;
   padding-top: 2rem;
   width: 100%;
-  /* flex-wrap: wrap; */
 }
 
 .trade-securely 
@@ -356,6 +355,7 @@ select[name=dropdown]:nth-child(2){
   margin-right: 2rem;
   padding: 2rem 2rem;
   line-height: 1.2rem;
+  box-shadow: 5px 4px 7px rgba(14, 11, 54, 0.2);
 }
 
 .cards
@@ -383,9 +383,9 @@ select[name=dropdown]:nth-child(2){
   font-size: .8rem;
 }
 
-.btn-BTC, .btn-ETH, .btn-LTC {
+.btn-BTC, .btn-ETH, .btn-LTC i{
   background-color: var(--light-blue);
-  padding: 20px 40px;
+  padding: 18px 40px;
   border-radius: 40px;
   color: var(--white-accent);
   border: 0;
@@ -393,6 +393,7 @@ select[name=dropdown]:nth-child(2){
   font-size: .9rem;
   transition: transform .4s; 
 }
+
 
 /*------------------------ MARKET SENTIMENTS, PORTFOLIO SECTION -------------------------*/
 
@@ -406,12 +407,12 @@ background-color: #2B076E;
 }
 
 .sect-1 h2{
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
   display: inherit;
   margin: auto;
   align-items: center;
   text-align: center;
-  line-height: 3.5rem;
+  line-height: 3rem;
   padding: 0 2rem 4rem;
   flex-wrap: wrap;
 }
@@ -586,7 +587,7 @@ footer .stack3 h2{
   display: flex;
   color: var(--white-accent);
   list-style: none;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 0 5rem;
 }
 .footer-footer .social-links ul li{

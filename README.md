@@ -28,7 +28,7 @@
 ### What I learned
 
 Advanced CSS Properties
-CSS Grid
+CSS selectors
 
 To see how you can add code snippets, see below:
 
