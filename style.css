@@ -20,7 +20,10 @@
   width: 100%;
   overflow-x: hidden;
 }
-
+header{
+  background-color: var(--dark-blue);
+}
+ 
 body{
   background-color: var(--dark-blue);
   width: 100%;
@@ -45,13 +48,23 @@ nav img{
   cursor: pointer;
 }
 
-nav i{
-  visibility: hidden;
+.hamburger{
+  display: none;
+  cursor: pointer;
 }
-
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--white-accent);
+}
 
 nav > ul > li {
   display: inline-block;
+  /* display: flex; */
   list-style: none;
   padding: 0 2rem;
   font-size: 1rem;
@@ -590,13 +603,13 @@ footer .stack3 h2{
   justify-content: space-around;
   padding: 0 5rem;
 }
+
 .footer-footer .social-links ul li{
   display: inline;
   list-style: none;
   padding: 0 1.3rem;
   font-size: 1.4rem;
   cursor: pointer;
-
 }
 
 .footer-footer span{
@@ -608,18 +621,59 @@ footer .stack3 h2{
 @media screen and (max-width: 950px) {
 
     /* -------------------- HERO  SECTION ----------------------*/
-    nav ul{
-      display: none;
+    .nav-menu{
+      position: absolute;
+      display: flex;
+      left: -100%;
+      top: 70px;
+      gap:0;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #2b076e;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s; 
+      padding: 0;
+    }
+    nav ul li{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0;
     }
 
-    nav i{
-      visibility: visible;
-      font-size: 1.5rem;
+    .hamburger{
+      display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-item{
+      margin: 16px 0;
+    }
+    .nav-menu.active{
+      left: 0;
     }
     nav{
       padding-top: 1rem;
-
     }
+
+    .btn{
+      background-color: var(--light-blue);
+      padding: 15px 10px;
+      border-radius: 0px;
+      color: var(--white-accent);
+      border: 0;
+      font-weight: 700;
+      font-size: .9rem;
+      transition: transform .4s; 
+    }
+    
       .hero-section{
         display: flex;
         flex-direction: column;
@@ -752,7 +806,7 @@ footer .stack3 h2{
     /*------------------------ detailed statistics ---------------------*/
     .sect-1 .line-2{
       display: flex;
-      /* padding: 2rem; */
+      width: 100%;
       flex-direction: column;
     }
 
